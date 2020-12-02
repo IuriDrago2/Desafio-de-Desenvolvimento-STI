@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <h:head>
+        <title>Garagem GreatPrice</title>
+    </h:head>
+    <h:body>
+        <h1>Novo Veículo</h1>
+        
+        <h:form>
+            <h:outputText value="Nome"/>
+            <h:inputText value="#{cursoController.curso.curs_Nome}"/>
+            <br/>
+            <h:outputText value="Credito"/>
+            <h:inputText value="#{cursoController.curso.curs_Credito}"/>
+            <br/>
+            <br/>
+              <p:commandButton value="Inserir" 
+                             rendered="#{cursoController.curso.curs_Id=='0'}"
+                             action="#{cursoController.actionGravarNovo()}"/>
+            <p:commandButton value="Alterar" 
+                             rendered="#{cursoController.curso.curs_Id>'0'}"
+                             action="#{cursoController.actionSalvarAlteracao()}"/>
+        </h:form>
+    </h:body>
+</html>
