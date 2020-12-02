@@ -27,5 +27,5 @@ aluno possui e o valor a ser pago.
 login.
 ```sh
 O projeto deve ser desenvolvido na linguagem Java, utilizando o framework JSF, HIbernate e
-banco de dados Postgres e publicadas no github do candidato.
+banco de dados Postgres.
 ```
