@@ -5,4 +5,4 @@ CREATE TABLE Curso (
 );
 ;
 INSERT INTO Curso (curs_nome, curs_credito)
-VALUES ('Alguém', 200.0);
+VALUES ('AlguÃ©m', 200.0);
